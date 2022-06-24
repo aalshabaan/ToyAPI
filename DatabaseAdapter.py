@@ -7,9 +7,6 @@ class ItemAlreadyExistsError(DatabaseError):
 class ItemNotFoundError(DatabaseError):
     pass
 
-class InsufficientStockError(DatabaseError):
-    pass
-
 class IllegalKeyError(DatabaseError):
     pass
 

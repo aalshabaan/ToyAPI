@@ -1,4 +1,7 @@
-from DatabaseAdapter import DatabaseAdapter, InsufficientStockError, ItemNotFoundError
+from DatabaseAdapter import DatabaseAdapter,DatabaseError, ItemNotFoundError
+
+class InsufficientStockError(DatabaseError):
+    pass
 
 class ItemDatabase(DatabaseAdapter):
     """
