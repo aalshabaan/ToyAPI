@@ -13,7 +13,9 @@ class IllegalKeyError(DatabaseError):
 
 class DatabaseAdapter:
     """
-    Basic data structure class, to be replaced with a class interfacing with an actual database.
+    Basic data structure class emulating a NoSQL database, to be replaced with a class interfacing with an actual database.
+
+    The class member
     """
     allowed_keys = []
     def __init__(self):
