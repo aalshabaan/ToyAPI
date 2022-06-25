@@ -182,7 +182,7 @@ class Item(Resource):
                 return f'Added {count} items to {name}!'
         else:
             try:
-                item_db.take_item(name, -count)
+                item_db.take_item(name, abs(count))
             except ItemNotFoundError as e:
                 return e.args[0], 404
             except InsufficientStockError as e:
